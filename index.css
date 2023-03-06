@@ -1,0 +1,311 @@
+/*Fuentes a usar
+    font-family: 'Henny Penny', cursive;
+
+    font-family: 'Holtwood One SC', serif;
+
+    font-family: 'Hubballi', cursive;
+
+*/
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        font-size: 62.5%;
+    }
+    body{
+        position: relative;
+        margin: 0 auto;
+        width: 90%;
+        background: #000000;
+    }
+    .foto img {
+        width: 100%;
+        height: 185px;
+    }
+    .container {
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }
+    h1{
+        position: relative;
+        margin: 0 auto;
+        width: 207px;
+        height: 43px;
+        font-family: 'Holtwood One SC', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 25px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.73);
+    }
+    .containerHeader{
+        position: absolute;
+        width: 100%;
+        top: 170px;
+        height: 24px;
+        z-index: 1;
+        font-family: 'Henny Penny', cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .parrafo {
+        position: relative;
+        margin: 0 auto;
+        background-color: #3D0000;
+        width: 192px;
+        height: 30px;
+        border-radius: 20px;
+    }
+    .containerContenido{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 246px;
+        background: rgba(61, 0, 0, 0.69);
+        gap: 110px;
+    }
+    .containerContenido img{
+        width: 92px;
+    }
+    .containerContenido p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 360px;
+        font-family: 'Hubballi', cursive;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        z-index: 1;
+    }
+    .fondoTarjetas img{
+        width: 100%;
+        height: 418px;
+    }
+    .containerCard{
+        position: absolute;
+        z-index: 1;
+        top: 506px;
+        width: 100%;
+    }
+    .containerCard-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 238px;
+    }
+    .card{
+        width: 178px;
+        height: 240px;
+        background: #3D0000;
+        border-radius: 24px;
+        color: #FFFFFF;
+    }
+    .card img{
+        width: 100%;
+        height: 108px;
+        border-radius: 14px;
+    }
+    .card h4{
+        position: relative;
+        margin: 0 auto;
+        width: 140px;
+        height: 26px;
+        font-family: 'Henny Penny';
+        font-size: normal;
+        font-weight: 400;
+        font-size: 1.7rem;
+        line-height: 25px;
+        text-align: center;
+    }
+    .containerP{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .card p{
+        width: 95px;
+        height: 93px;
+        font-family: 'Hubballi';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 25px;
+        text-align: center;
+    }
+    .containerContent{
+        position: absolute;
+        top: 834px;
+        width: 100%;
+        height: 24px;
+        z-index: 1;
+        font-family: 'Henny Penny', cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .parrafoContent{
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        padding: 6px;
+        background-color: #3D0000;
+        width: 182px;
+        height: 36px;
+        border-radius: 20px;
+    }
+    .containerMaridajes{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .cardCervezas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-top: 36px;
+        text-align: center;
+    }
+    .weis{
+        background-color: #FFDF52;
+    }
+    .lager{
+        background-color: #E3DE97;
+    }
+    .ipa{
+        background-color: #8E3200;
+    }
+    .negra{
+        background-color: #1D1717;
+    }
+    .marron{
+        background-color: #4D040D;
+    }
+    .stout{
+        background-color: #2E1000;
+    }
+    .tarjeta {
+        width: 280px;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 10px;
+     }
+    .tarjeta-titulo {
+        font-family: 'Henny Penny';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.7rem;
+        line-height: 25px;
+        padding: 10px;
+        color: #FFFFFF;
+        width: 280px;
+        height: 42px;
+        border-radius: 5px;
+      }
+    .tarjeta-contenido {
+        padding: 10px;
+        text-align: center;
+        font-size: 2rem;
+        color: #000000;
+        background-color: #F5E8E4;
+    }
+    .tarjeta-contenido h5 {
+        font-weight: bold;
+        font-size: 2.2rem;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+        background: #3D0000;
+        text-align: center;
+        gap: 382px;
+    }
+    .footer h2{
+        color: white;
+        font-family: 'Henny Penny';
+        font-size: 2rem;
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .divcontactos{
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+    }
+    .contacto img{
+        width: 25px;
+    }
+    .fuentes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fuentes p {
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
+    .fuentes a{
+        color: black;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+@media(max-width:885px){
+    body{
+        width: 100%;
+    }
+    .containerContenido img{
+        display: none;
+    }
+}
+@media(max-width: 646px){
+    .containerCard-2{
+        gap: 100px;
+    }
+    .footer{
+        gap: 170px;
+    }
+}
+@media(max-width: 365px){
+    .containerCard-2{
+        gap: 32px;
+    }
+    .card{
+        width: 152px;
+        height: 228px;
+    }
+    .footer{
+        padding: 12px;
+        gap: 18px;
+    }
+    .divcontactos{
+        flex-direction: row;
+    }
+}
